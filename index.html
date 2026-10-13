@@ -1,25 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hato360</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6; max-width: 40rem; margin: 0 auto; padding: 4rem 1.25rem;
-      color: #1a1a1a; background: #fff; text-align: center;
-    }
-    @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #7db4ff; } }
-    h1 { font-size: 2rem; margin: 0 0 .5rem; }
-    p { color: #777; }
-    a { color: #0b62d6; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hato360 — El control de tu ganado</title>
+<meta name="description" content="Hato360 lleva el registro de tu ganado desde el teléfono, aunque no haya señal. También desde la computadora.">
+<meta name="theme-color" content="#1F5C3F">
+<link rel="canonical" href="https://hato360.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hato360.app/">
+<meta property="og:title" content="Hato360 — El control de tu ganado">
+<meta property="og:description" content="La app para llevar el registro de tu ganado desde el corral, aunque no haya señal.">
+<meta property="og:image" content="https://hato360.app/assets/img/og.png">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/AlfaSlabOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/AtkinsonHyperlegible-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <h1>Hato360</h1>
-  <p>Registro de ganado para el rancho.</p>
-  <p><a href="/privacidad">Aviso de privacidad</a> · <a href="/terminos">Términos de uso</a> · <a href="/eliminar-cuenta">Eliminar cuenta</a></p>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="barda">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="/" aria-label="Hato360, inicio">
+        <img src="assets/img/logo.webp" width="52" height="52" alt=""><span>Hato360</span>
+      </a>
+      <a class="entrar" href="https://inventa.borucas.com/login">Iniciar sesión</a>
+    </div>
+
+    <div class="hero" id="contenido">
+      <div>
+        <h1 class="sign" data-pintar>
+          <span class="line">El control</span>
+          <span class="line">de tu ganado</span>
+          <span class="line">desde el corral,</span>
+          <span class="line line-quiet">aunque no haya señal.</span>
+        </h1>
+        <p class="apoyo"><strong>Hato360 es la app para llevar el registro de tu ganado:</strong> aretes, vacunas, pesos y potreros. Lo que anotas se guarda en el teléfono y se comparte con tu rancho cuando vuelve la señal.</p>
+        <div class="acciones">
+          <button class="tienda" type="button" disabled aria-label="App Store, próximamente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+            <span><b>App Store</b><small>Próximamente</small></span>
+          </button>
+          <button class="tienda" type="button" disabled aria-label="Google Play, próximamente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5v17l13-8.5z"/></svg>
+            <span><b>Google Play</b><small>Próximamente</small></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="telefono-col">
+        <div class="telefono" data-telefono role="img" aria-label="La app en un teléfono: lista del ganado con su arete, buscador y filtros">
+          <img class="pantalla" src="assets/img/app-ganado.webp" width="720" height="1520" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="corral" aria-labelledby="corral-titulo">
+    <div class="wrap">
+      <h2 class="titulo" id="corral-titulo">Pensado para el trabajo de campo.</h2>
+
+      <article class="verdad">
+        <div class="verdad-texto">
+          <h3 class="titulo">Tu ganado al día</h3>
+          <p>Cada animal con su arete, su historia y dónde anda. Lo encuentras en segundos, con la vaca enfrente.</p>
+        </div>
+        <div class="escena ficha-mini" role="group" aria-label="Ejemplo de la ficha de un animal">
+          <header><span class="placa">V-7</span><div><b>Brahman · Hembra</b><span>Arete oficial <span class="nw">MX-0215 1753</span></span></div></header>
+          <dl>
+            <dt>Vacuna</dt><dd>12 oct 2026</dd>
+            <dt>Peso</dt><dd>438 kg</dd>
+            <dt>Potrero</dt><dd>Vega del río</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="verdad">
+        <div class="verdad-texto">
+          <h3 class="titulo">Funciona sin señal</h3>
+          <p>Anota en el potrero más lejano. Todo se queda en tu teléfono y se envía solo cuando vuelve la señal.</p>
+        </div>
+        <div class="escena sin-senal" role="group" aria-label="Ejemplo: registros guardados sin señal que se envían después">
+          <ol>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0M5.5 12.3a10 10 0 0 1 13 0M9 15.8a5 5 0 0 1 6 0M12 19.5h.01M3 3l18 18"/></svg>Sin señal en el potrero<span class="cuenta" data-cuenta>3 guardados</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19.5h.01M2 9a15 15 0 0 1 20 0"/></svg>De regreso, vuelve la señal</li>
+            <li class="listo" data-listo><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Enviados a tu rancho</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="verdad">
+        <div class="verdad-texto">
+          <h3 class="titulo">Todo el equipo en el mismo rancho</h3>
+          <p>Cada quien en su teléfono, todos viendo el mismo ganado. Lo que uno registra, los demás lo ven.</p>
+        </div>
+        <div class="escena equipo" role="img" aria-label="Ejemplo: tres teléfonos con el mismo registro">
+          <svg class="cuerda" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true"><path data-cuerda d="M0 22c30-10 55 8 80 0s50-12 75-2 45 10 70 1 50-9 75 2" fill="none" stroke="var(--tag)" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="mini"><span class="placa">V-7</span><small>Vacuna<br>12 oct</small></div>
+          <div class="mini"><span class="placa">V-7</span><small>Vacuna<br>12 oct</small></div>
+          <div class="mini"><span class="placa">V-7</span><small>Vacuna<br>12 oct</small></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="oficina" aria-labelledby="oficina-titulo">
+    <div class="wrap">
+      <div>
+        <h2 class="titulo" id="oficina-titulo">También desde la computadora</h2>
+        <p>Entra con la misma cuenta de la app y consulta tu ganado en pantalla grande.</p>
+        <a class="boton" href="https://inventa.borucas.com/login">Iniciar sesión
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="compu" role="img" aria-label="El portal web en una computadora: el panel del rancho con su ganado por estado">
+        <img class="compu-pantalla" src="assets/img/portal-panel.webp" width="1200" height="750" alt="" loading="lazy" decoding="async">
+        <div class="compu-base"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <h2 class="titulo">La app llega pronto a las tiendas.</h2>
+    <div class="acciones">
+      <button class="tienda" type="button" disabled aria-label="App Store, próximamente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+        <span><b>App Store</b><small>Próximamente</small></span>
+      </button>
+      <button class="tienda" type="button" disabled aria-label="Google Play, próximamente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5v17l13-8.5z"/></svg>
+        <span><b>Google Play</b><small>Próximamente</small></span>
+      </button>
+    </div>
+    <div class="creditos">
+      <nav aria-label="Información legal y contacto">
+        <a href="/privacidad">Aviso de privacidad</a>
+        <a href="/terminos">Términos de uso</a>
+        <a href="/eliminar-cuenta">Eliminar cuenta</a>
+        <a href="mailto:contactoarriero@gmail.com">contactoarriero@gmail.com</a>
+      </nav>
+      <small>© 2026 Hato360</small>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+// Mejora progresiva: sin JS o con movimiento reducido, todo está visible y quieto.
+import { animate, inView, scroll, stagger } from "./assets/motion.js";
+const ease = [0.16, 1, 0.3, 1];
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  // Firma: el titular se pinta renglón por renglón, como brocha sobre la barda.
+  animate("[data-pintar] .line", { clipPath: ["inset(0 100% 0 0)", "inset(0 0% 0 0)"] },
+            { duration: 0.75, delay: stagger(0.14), ease: ease });
+  // El teléfono se asienta contra la barda y sube un poco al hacer scroll.
+  const tel = document.querySelector("[data-telefono]");
+  // Primero se asienta contra la barda; ya asentado, el parallax ligero del scroll (≤ 24 px).
+  animate(tel, { y: [24, 0] }, { duration: 0.9, delay: 0.35, ease: ease }).finished.then(() =>
+    scroll(animate(tel, { y: [0, -24] }, { ease: "linear" }), { target: document.querySelector(".barda"), offset: ["start start", "end start"] }));
+  // Sin señal: el envío se confirma al entrar en pantalla.
+  inView("[data-listo]", function (el) {
+    animate(el, { scale: [0.96, 1] }, { duration: 0.5, ease: ease });
+  }, { amount: 0.8 });
+  // Equipo: la cuerda amarilla se traza entre los tres teléfonos.
+  inView("[data-cuerda]", function (el) {
+    const len = el.getTotalLength();
+    animate(el, { strokeDasharray: [len + " " + len, len + " " + len], strokeDashoffset: [len, 0] }, { duration: 1.1, ease: ease });
+  }, { amount: 0.6 });
+}
+</script>
 </body>
 </html>

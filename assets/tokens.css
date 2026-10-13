@@ -1,0 +1,40 @@
+/* Hato360 — tokens web. Paleta = docs/design/README.md (fija). Copia idéntica en
+   backend/app/assets/stylesheets/tokens.css y en hato360-site/assets/tokens.css. */
+:root {
+  --bg: #F5F0E6;
+  --surface: #FFFFFF;
+  --primary: #1F5C3F;
+  --primary-pressed: #14402B;
+  --on-primary: #FFFFFF;
+  --on-primary-muted: #E9F1EC;
+  --tag: #F2B705;
+  --text: #1E1C17;
+  --text-muted: #5C574B;
+  --placeholder: #7A7466;
+  --border: #C9C0AE;
+  --divider: #D8CFBD;
+  --chip: #EFE8DA;
+  --error: #B42318;
+  --error-text: #8F1C13;
+  --error-bg: #FDECEA;
+  --error-field-bg: #FFF5F4;
+
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 20px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 40px;
+
+  --font-body: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Atkinson Hyperlegible", sans-serif;
+  --font-sign: "Alfa Slab One", Georgia, serif; /* solo el titular de hato360.app; el portal no la usa */
+
+  --motion-fast: 150ms;
+  --motion-base: 200ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
